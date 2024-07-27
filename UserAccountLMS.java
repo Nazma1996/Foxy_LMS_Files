@@ -38,8 +38,8 @@ public class UserAccountLMS {
 			driver.findElement(By.xpath("//button[@class='css-kz4v6u']")).click();             //Setting icon
 			driver.findElement(By.name("name")).sendKeys("Radhika");                              //Name
 			driver.findElement(By.name("address")).sendKeys("Pune");                                 //Address
-		    driver.findElement(By.xpath("//button[@type='submit']")).click();                    //Save
-		    Thread.sleep(2000);
+		        driver.findElement(By.xpath("//button[@type='submit']")).click();                    //Save
+		        Thread.sleep(2000);
 			driver.findElement(By.xpath("//button[text()='Security']")).click();                                  //Security
 			driver.findElement(By.name("current_pass")).sendKeys("nazma");                                         // Current password
 			driver.findElement(By.name("change_pass")).sendKeys("muskan");                                         //new password
