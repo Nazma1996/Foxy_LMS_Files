@@ -40,7 +40,7 @@ public class AdminAccount {
 		driver.findElement(By.xpath("//button[text()='Add Course']")).click();      //add course submit button
 		driver.findElement(By.xpath("//button[@class='chakra-modal__close-btn css-1ik4h6n']")).click();    //cross button
 		driver.findElement(By.xpath("//button[text()='Edit']")).click();        //edit course
-    	driver.findElement(By.id("field-:rr:")).sendKeys("C:\\\\Users\\\\HP\\\\Pictures\\\\Saved Pictures");       //choose file
+    	        driver.findElement(By.id("field-:rr:")).sendKeys("C:\\\\Users\\\\HP\\\\Pictures\\\\Saved Pictures");       //choose file
 		driver.findElement(By.xpath("//input[@name='title']")).sendKeys("History");                         //title
 		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/section/div/form/div[3]/textarea")).sendKeys("Educational");     //description
 		WebElement e=driver.findElement(By.xpath("//select[@name='industry']"));         //drop down
