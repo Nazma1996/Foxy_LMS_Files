@@ -40,15 +40,14 @@ public class AdminAccount {
 		driver.findElement(By.xpath("//button[text()='Add Course']")).click();      //add course submit button
 		driver.findElement(By.xpath("//button[@class='chakra-modal__close-btn css-1ik4h6n']")).click();    //cross button
 		driver.findElement(By.xpath("//button[text()='Edit']")).click();        //edit course
-    	        driver.findElement(By.id("field-:rr:")).sendKeys("C:\\\\Users\\\\HP\\\\Pictures\\\\Saved Pictures");       //choose file
+    	        //driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\HP\\Pictures\\Saved Pictures");       //choose file
 		driver.findElement(By.xpath("//input[@name='title']")).sendKeys("History");                         //title
 		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/section/div/form/div[3]/textarea")).sendKeys("Educational");     //description
 		WebElement e=driver.findElement(By.xpath("//select[@name='industry']"));         //drop down
 		Select dd =new Select(e);
 		dd.selectByVisibleText("Health");
-		driver.findElement(By.xpath("//button[@typt='submit']")).click();         //edit button
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[@type='button']")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();         //edit button
+		driver.findElement(By.xpath("//button[@class='chakra-modal__close-btn css-1ik4h6n']")).click();
 		driver.findElement(By.xpath("//p[text()='Courses']")).click();
 		driver.findElement(By.xpath("//button[text()='Delete']")).click();
 		driver.findElement(By.xpath("//button[text()='Yes']")).click();
@@ -70,7 +69,7 @@ public class AdminAccount {
 		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/section/div/form/div[3]/div[1]/input")).sendKeys("Bridge");   //option
 		WebElement elem=driver.findElement(By.xpath("//select[@name='correct_option']"));         // options dropdown
 		Select drpdon =new Select(elem);
-		drpdon.selectByVisibleText("jh");
+		drpdon.selectByVisibleText("No answer");
 		driver.findElement(By.name("marks")).sendKeys("4");                    //marks
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		driver.findElement(By.xpath("//button[@type='button']")).click();
